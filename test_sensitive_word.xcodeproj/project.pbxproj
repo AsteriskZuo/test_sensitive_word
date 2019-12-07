@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		D9DAA7EA239BCF870005445E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DAA7E9239BCF870005445E /* AppDelegate.m */; };
 		D9DAA7ED239BCF870005445E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DAA7EC239BCF870005445E /* SceneDelegate.m */; };
-		D9DAA7F0239BCF870005445E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DAA7EF239BCF870005445E /* ViewController.m */; };
+		D9DAA7F0239BCF870005445E /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D9DAA7EF239BCF870005445E /* ViewController.mm */; };
 		D9DAA7F3239BCF870005445E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DAA7F1239BCF870005445E /* Main.storyboard */; };
 		D9DAA7F6239BCF870005445E /* test_sensitive_word.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9DAA7F4239BCF870005445E /* test_sensitive_word.xcdatamodeld */; };
 		D9DAA7F8239BCF880005445E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9DAA7F7239BCF880005445E /* Assets.xcassets */; };
 		D9DAA7FB239BCF880005445E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DAA7F9239BCF880005445E /* LaunchScreen.storyboard */; };
 		D9DAA7FE239BCF880005445E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DAA7FD239BCF880005445E /* main.m */; };
 		D9DAA808239BCF880005445E /* test_sensitive_wordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DAA807239BCF880005445E /* test_sensitive_wordUITests.m */; };
+		D9DAA81E239BD0140005445E /* opencc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DAA81D239BD0140005445E /* opencc.framework */; };
+		D9DAA81F239BD0140005445E /* SensitiveWord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DAA81B239BCFC90005445E /* SensitiveWord.framework */; };
+		D9DAA821239BD0230005445E /* SensitiveWord.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9DAA81B239BCFC90005445E /* SensitiveWord.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9DAA822239BD02D0005445E /* opencc.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9DAA81D239BD0140005445E /* opencc.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +30,28 @@
 			remoteGlobalIDString = D9DAA7E4239BCF870005445E;
 			remoteInfo = test_sensitive_word;
 		};
+		D9DAA81A239BCFC90005445E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9DAA813239BCFC90005445E /* SensitiveWord.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D9DAA797239BA94B0005445E;
+			remoteInfo = SensitiveWord;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9DAA820239BD01D0005445E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				D9DAA822239BD02D0005445E /* opencc.framework in CopyFiles */,
+				D9DAA821239BD0230005445E /* SensitiveWord.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D9DAA7E5239BCF870005445E /* test_sensitive_word.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_sensitive_word.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,7 +60,7 @@
 		D9DAA7EB239BCF870005445E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		D9DAA7EC239BCF870005445E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		D9DAA7EE239BCF870005445E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D9DAA7EF239BCF870005445E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D9DAA7EF239BCF870005445E /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		D9DAA7F2239BCF870005445E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9DAA7F5239BCF870005445E /* test_sensitive_word.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = test_sensitive_word.xcdatamodel; sourceTree = "<group>"; };
 		D9DAA7F7239BCF880005445E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +70,8 @@
 		D9DAA803239BCF880005445E /* test_sensitive_wordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test_sensitive_wordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DAA807239BCF880005445E /* test_sensitive_wordUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test_sensitive_wordUITests.m; sourceTree = "<group>"; };
 		D9DAA809239BCF880005445E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9DAA813239BCFC90005445E /* SensitiveWord.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SensitiveWord.xcodeproj; path = ../../SensitiveWord/SensitiveWord.xcodeproj; sourceTree = "<group>"; };
+		D9DAA81D239BD0140005445E /* opencc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = opencc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9DAA81E239BD0140005445E /* opencc.framework in Frameworks */,
+				D9DAA81F239BD0140005445E /* SensitiveWord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,9 +97,11 @@
 		D9DAA7DC239BCF870005445E = {
 			isa = PBXGroup;
 			children = (
+				D9DAA812239BCF950005445E /* SensitiveWord */,
 				D9DAA7E7239BCF870005445E /* test_sensitive_word */,
 				D9DAA806239BCF880005445E /* test_sensitive_wordUITests */,
 				D9DAA7E6239BCF870005445E /* Products */,
+				D9DAA81C239BD0140005445E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +122,7 @@
 				D9DAA7EB239BCF870005445E /* SceneDelegate.h */,
 				D9DAA7EC239BCF870005445E /* SceneDelegate.m */,
 				D9DAA7EE239BCF870005445E /* ViewController.h */,
-				D9DAA7EF239BCF870005445E /* ViewController.m */,
+				D9DAA7EF239BCF870005445E /* ViewController.mm */,
 				D9DAA7F1239BCF870005445E /* Main.storyboard */,
 				D9DAA7F7239BCF880005445E /* Assets.xcassets */,
 				D9DAA7F9239BCF880005445E /* LaunchScreen.storyboard */,
@@ -111,6 +142,30 @@
 			path = test_sensitive_wordUITests;
 			sourceTree = "<group>";
 		};
+		D9DAA812239BCF950005445E /* SensitiveWord */ = {
+			isa = PBXGroup;
+			children = (
+				D9DAA813239BCFC90005445E /* SensitiveWord.xcodeproj */,
+			);
+			path = SensitiveWord;
+			sourceTree = "<group>";
+		};
+		D9DAA814239BCFC90005445E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9DAA81B239BCFC90005445E /* SensitiveWord.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9DAA81C239BD0140005445E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9DAA81D239BD0140005445E /* opencc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,6 +176,7 @@
 				D9DAA7E1239BCF870005445E /* Sources */,
 				D9DAA7E2239BCF870005445E /* Frameworks */,
 				D9DAA7E3239BCF870005445E /* Resources */,
+				D9DAA820239BD01D0005445E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -178,6 +234,12 @@
 			mainGroup = D9DAA7DC239BCF870005445E;
 			productRefGroup = D9DAA7E6239BCF870005445E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D9DAA814239BCFC90005445E /* Products */;
+					ProjectRef = D9DAA813239BCFC90005445E /* SensitiveWord.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D9DAA7E4239BCF870005445E /* test_sensitive_word */,
@@ -185,6 +247,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D9DAA81B239BCFC90005445E /* SensitiveWord.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SensitiveWord.framework;
+			remoteRef = D9DAA81A239BCFC90005445E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D9DAA7E3239BCF870005445E /* Resources */ = {
@@ -213,7 +285,7 @@
 			files = (
 				D9DAA7FE239BCF880005445E /* main.m in Sources */,
 				D9DAA7F6239BCF870005445E /* test_sensitive_word.xcdatamodeld in Sources */,
-				D9DAA7F0239BCF870005445E /* ViewController.m in Sources */,
+				D9DAA7F0239BCF870005445E /* ViewController.mm in Sources */,
 				D9DAA7EA239BCF870005445E /* AppDelegate.m in Sources */,
 				D9DAA7ED239BCF870005445E /* SceneDelegate.m in Sources */,
 			);
