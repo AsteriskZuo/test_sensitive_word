@@ -16,10 +16,8 @@
 		D9DAA7FB239BCF880005445E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DAA7F9239BCF880005445E /* LaunchScreen.storyboard */; };
 		D9DAA7FE239BCF880005445E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DAA7FD239BCF880005445E /* main.m */; };
 		D9DAA808239BCF880005445E /* test_sensitive_wordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DAA807239BCF880005445E /* test_sensitive_wordUITests.m */; };
-		D9DAA81E239BD0140005445E /* opencc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DAA81D239BD0140005445E /* opencc.framework */; };
-		D9DAA81F239BD0140005445E /* SensitiveWord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DAA81B239BCFC90005445E /* SensitiveWord.framework */; };
-		D9DAA821239BD0230005445E /* SensitiveWord.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9DAA81B239BCFC90005445E /* SensitiveWord.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D9DAA822239BD02D0005445E /* opencc.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9DAA81D239BD0140005445E /* opencc.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9DAA855239C928F0005445E /* SensitiveWord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DAA81B239BCFC90005445E /* SensitiveWord.framework */; };
+		D9DAA857239C95A80005445E /* opencc_data.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9DAA856239C95A80005445E /* opencc_data.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				D9DAA822239BD02D0005445E /* opencc.framework in CopyFiles */,
-				D9DAA821239BD0230005445E /* SensitiveWord.framework in CopyFiles */,
+				D9DAA857239C95A80005445E /* opencc_data.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +69,7 @@
 		D9DAA809239BCF880005445E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9DAA813239BCFC90005445E /* SensitiveWord.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SensitiveWord.xcodeproj; path = ../../SensitiveWord/SensitiveWord.xcodeproj; sourceTree = "<group>"; };
 		D9DAA81D239BD0140005445E /* opencc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = opencc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DAA856239C95A80005445E /* opencc_data.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = opencc_data.bundle; path = "../../../../Library/Developer/Xcode/DerivedData/test_sensitive_word-cxyrrqogkusacndooytlkrtijjnp/Build/Products/Debug/opencc_data.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9DAA81E239BD0140005445E /* opencc.framework in Frameworks */,
-				D9DAA81F239BD0140005445E /* SensitiveWord.framework in Frameworks */,
+				D9DAA855239C928F0005445E /* SensitiveWord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +94,7 @@
 		D9DAA7DC239BCF870005445E = {
 			isa = PBXGroup;
 			children = (
+				D9DAA856239C95A80005445E /* opencc_data.bundle */,
 				D9DAA812239BCF950005445E /* SensitiveWord */,
 				D9DAA7E7239BCF870005445E /* test_sensitive_word */,
 				D9DAA806239BCF880005445E /* test_sensitive_wordUITests */,
