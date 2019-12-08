@@ -1,0 +1,6 @@
+framework module SensitiveWord {
+  umbrella header "SensitiveWord.h"
+
+  export *
+  module * { export * }
+}
